@@ -1,0 +1,97 @@
+{
+  "cutoff": "2026-06-20",
+  "sites": [
+    {
+      "id": "coast",
+      "region": "north",
+      "period_reports_through": "2026-06-20"
+    },
+    {
+      "id": "ridge",
+      "region": "south",
+      "period_reports_through": "2026-06-12"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c1",
+      "person": "anon-2",
+      "kind": "consultation",
+      "site": "coast",
+      "day": "2026-06-09",
+      "reported": "2026-06-10",
+      "state": "complete"
+    },
+    {
+      "id": "c2",
+      "person": "anon-2",
+      "kind": "followup",
+      "site": "ridge",
+      "day": "2026-06-12",
+      "reported": "2026-06-13",
+      "state": "complete"
+    },
+    {
+      "id": "c3",
+      "person": "anon-8",
+      "kind": "consultation",
+      "site": "coast",
+      "day": "2026-06-14",
+      "reported": "2026-06-17",
+      "state": "waiting"
+    },
+    {
+      "id": "c4",
+      "person": "anon-9",
+      "kind": "training",
+      "site": "ridge",
+      "day": "2026-06-16",
+      "reported": "2026-06-20",
+      "state": "complete"
+    }
+  ],
+  "referrals": [
+    {
+      "id": "r1",
+      "initial": "c1",
+      "destination": "ridge",
+      "outcome": "c2"
+    },
+    {
+      "id": "r2",
+      "initial": "c3",
+      "destination": "ridge",
+      "outcome": null
+    }
+  ],
+  "batches": [
+    {
+      "id": "a1",
+      "item": "basic-kit",
+      "received": 12
+    },
+    {
+      "id": "a2",
+      "item": "basic-kit",
+      "received": 5
+    }
+  ],
+  "issues": [
+    {
+      "id": "ship1",
+      "batch": "a1",
+      "contact": "c1",
+      "units": 2
+    },
+    {
+      "id": "ship2",
+      "batch": "a1",
+      "contact": "c2",
+      "units": 1
+    }
+  ],
+  "reserves": {
+    "ridge": 2
+  },
+  "round_limit": 4
+}
