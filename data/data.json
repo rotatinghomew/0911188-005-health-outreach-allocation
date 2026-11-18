@@ -1,0 +1,56 @@
+{
+  "definition": {
+    "name": "公益医疗服务概览",
+    "subject": "服务记录",
+    "table": "visits",
+    "group": "site",
+    "measure": "people"
+  },
+  "tables": {
+    "sites": [
+      {
+        "site": "coastal-clinic",
+        "region": "north"
+      },
+      {
+        "site": "mobile-team",
+        "region": "inland"
+      }
+    ],
+    "supplies": [
+      {
+        "batch": "b1",
+        "item": "basic-kit",
+        "quantity": 40
+      },
+      {
+        "batch": "b2",
+        "item": "training-pack",
+        "quantity": 12
+      }
+    ],
+    "visits": [
+      {
+        "service_id": "h1",
+        "site": "coastal-clinic",
+        "service": "consultation",
+        "people": 1,
+        "status": "complete"
+      },
+      {
+        "service_id": "h2",
+        "site": "coastal-clinic",
+        "service": "follow-up",
+        "people": 1,
+        "status": "referred"
+      },
+      {
+        "service_id": "h3",
+        "site": "mobile-team",
+        "service": "training",
+        "people": 8,
+        "status": "complete"
+      }
+    ]
+  }
+}
